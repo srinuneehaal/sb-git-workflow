@@ -20,6 +20,7 @@ public class Execute {
 
             System.out.println("Executing deployment for " + appName + " version " + appVersion + " in " + appEnvironment + " environment.");
             System.out.println("Deployment successful!");
+
         } catch (IOException e) {
             System.err.println("Failed to load configuration file: " + e.getMessage());
         }
