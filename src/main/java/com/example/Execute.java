@@ -8,8 +8,10 @@ public class Execute {
     public static void main(String[] args) {
         Properties properties = new Properties();
         try {
+
+            System.out.println("Loading properties from file Execute");
             // Load the configuration file
-            properties.load(new FileInputStream("config/application.properties"));
+            properties.load(new FileInputStream("src/main/config/application.properties"));
 
             // Simulate execution phase
             String appName = properties.getProperty("app.name");
