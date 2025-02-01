@@ -23,7 +23,7 @@ jobs:
         run: mvn clean package
 
       - name: Run Plan Phase
-        run: java -cp target/sb-git-workflow-0.0.1-SNAPSHOT.jar com.sb.workflow.sbgit.Plan
+        run: java -cp target/plan-and-execute-java-1.0-SNAPSHOT.jar com.example.Plan
 
   execute:
     runs-on: ubuntu-latest
@@ -41,4 +41,4 @@ jobs:
           distribution: 'temurin'
 
       - name: Run Execute Phase
-        run: java -cp target/sb-git-workflow-0.0.1-SNAPSHOT.jar com.sb.workflow.sbgit.Execute
+        run: java -cp target/plan-and-execute-java-1.0-SNAPSHOT.jar com.example.Execute
